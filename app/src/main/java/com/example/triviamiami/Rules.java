@@ -85,6 +85,9 @@ public class Rules extends AppCompatActivity {
                 heatles.putIntegerArrayListExtra("ARRAY", activityList);
                 startActivity(heatles);
                 break;
+            default:
+                Intent scoringpage = new Intent(this, ScoringPage.class);
+                startActivity(scoringpage);
         }
     }
 

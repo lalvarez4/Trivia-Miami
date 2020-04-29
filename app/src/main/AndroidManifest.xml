@@ -9,30 +9,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QLilPump"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QPalmetto"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QGucciMane"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QScarface"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QArtBasel"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QLilWayne"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QHurricaneSeason"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QTheHeatles"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QPitbull"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QHardRockStadium"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".QRickyWilliams"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".Rules"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".ScoringPage"
+            android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".QLilPump"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QPalmetto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QGucciMane"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QScarface"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QArtBasel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QLilWayne"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QHurricaneSeason"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QTheHeatles"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QPitbull"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QHardRockStadium"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QRickyWilliams"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rules"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".TriviaMiami"
             android:label="@string/app_name"
