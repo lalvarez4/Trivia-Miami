@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.triviamiami">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".QLilPump"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QPalmetto"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QGucciMane"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QScarface"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QArtBasel"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QLilWayne"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QHurricaneSeason"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QTheHeatles"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QPitbull"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QHardRockStadium"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".QRickyWilliams"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Rules"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".TriviaMiami"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
