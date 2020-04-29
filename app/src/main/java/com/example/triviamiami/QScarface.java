@@ -3,8 +3,10 @@ package com.example.triviamiami;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
 public class QScarface extends AppCompatActivity {
+    int activityID = 9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +16,14 @@ public class QScarface extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
+
+    }
+
+    public void answer(View view, int activityID){
+
+    }
+
+    public void nonAnswer(View view, int activityID){
 
     }
 }

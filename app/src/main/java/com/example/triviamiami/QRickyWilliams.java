@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class QRickyWilliams extends AppCompatActivity {
+    int activityID = 8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,11 @@ public class QRickyWilliams extends AppCompatActivity {
 
     }
 
-    public void answer(View view){
+    public void answer(View view, int activityID){
+
+    }
+
+    public void nonAnswer(View view, int activityID){
 
     }
 }
