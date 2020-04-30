@@ -9,19 +9,34 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Lil Pump Activity
+ * @author Louis Alvarez
+ */
 public class QLilPump extends AppCompatActivity {
 
+    /**
+     * Sets the activity on the screen.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q_lil_pump);
     }
 
+    /**
+     * Ignores the back key
+     */
     @Override
     public void onBackPressed(){
 
     }
 
+    /**
+     * If the user selects the correct answer, adds a point to his/ her score.
+     * @param view
+     */
     public void answer(View view){
         int activityID = 4;
 
@@ -112,6 +127,10 @@ public class QLilPump extends AppCompatActivity {
 
     }
 
+    /**
+     * If the user selects the correct answer, adds a point to his/ her score.
+     * @param view
+     */
     public void nonAnswer(View view){
         int activityID = 4;
 

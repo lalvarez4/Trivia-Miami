@@ -9,19 +9,34 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ *  Scarface Activity
+ * @author Louis Alvarez
+ */
 public class QScarface extends AppCompatActivity {
 
+    /**
+     * Sets the activity on the screen.
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q_scarface);
     }
 
+    /**
+     * Ignores the back key
+     */
     @Override
     public void onBackPressed(){
 
     }
 
+    /**
+     * If the user selects the correct answer, adds a point to his/ her score.
+     * @param view
+     */
     public void answer(View view){
         int activityID = 9;
 
@@ -112,6 +127,10 @@ public class QScarface extends AppCompatActivity {
 
     }
 
+    /**
+     * If the user selects the correct answer, adds a point to his/ her score.
+     * @param view
+     */
     public void nonAnswer(View view){
         int activityID = 9;
 
