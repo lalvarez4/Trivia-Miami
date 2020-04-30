@@ -15,10 +15,6 @@ public class QLilPump extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q_lil_pump);
-
-        Intent intent = getIntent();
-
-        ArrayList<Integer> activitiesList = intent.getIntegerArrayListExtra("ARRAY");
     }
 
     @Override
@@ -36,8 +32,19 @@ public class QLilPump extends AppCompatActivity {
         //activity from the list of possible activities to follow
         for(int i = 0; i < activityList.size(); i++){
             if(activityList.get(i) == activityID){
-                activityList.remove(i);
+                activityList.set(i, -1);
             }
+        }
+
+        int limit = 0;
+        for(int i = 0; i < activityList.size(); i++){
+            if(activityList.get(i) == -1){
+                limit++;
+            }
+        }
+        if(limit == 7){
+            Intent scorepage = new Intent(this, ScoringPage.class);
+            startActivity(scorepage);
         }
 
         Random random = new Random();
@@ -115,8 +122,19 @@ public class QLilPump extends AppCompatActivity {
         //activity from the list of possible activities to follow
         for(int i = 0; i < activityList.size(); i++){
             if(activityList.get(i) == activityID){
-                activityList.remove(i);
+                activityList.set(i, -1);
             }
+        }
+
+        int limit = 0;
+        for(int i = 0; i < activityList.size(); i++){
+            if(activityList.get(i) == -1){
+                limit++;
+            }
+        }
+        if(limit == 7){
+            Intent scorepage = new Intent(this, ScoringPage.class);
+            startActivity(scorepage);
         }
 
         Random random = new Random();

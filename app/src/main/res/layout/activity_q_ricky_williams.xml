@@ -13,24 +13,39 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/triviamiamirickywilliams" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="600dp"
+        android:id="@+id/button6"
+        android:layout_width="328dp"
+        android:layout_height="136dp"
+        android:alpha="0"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="344dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="84dp"
+        android:alpha="0"
+        android:onClick="answer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="1.0"
-        android:onClick= "answer"/>
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

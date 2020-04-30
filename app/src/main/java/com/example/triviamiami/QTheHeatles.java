@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class QTheHeatles extends AppCompatActivity {
-    //int activity = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +32,19 @@ public class QTheHeatles extends AppCompatActivity {
         //activity from the list of possible activities to follow
         for(int i = 0; i < activityList.size(); i++){
             if(activityList.get(i) == activityID){
-                activityList.remove(i);
+                activityList.set(i, -1);
             }
+        }
+
+        int limit = 0;
+        for(int i = 0; i < activityList.size(); i++){
+            if(activityList.get(i) == -1){
+                limit++;
+            }
+        }
+        if(limit == 7){
+            Intent scorepage = new Intent(this, ScoringPage.class);
+            startActivity(scorepage);
         }
 
         Random random = new Random();
@@ -112,8 +122,19 @@ public class QTheHeatles extends AppCompatActivity {
         //activity from the list of possible activities to follow
         for(int i = 0; i < activityList.size(); i++){
             if(activityList.get(i) == activityID){
-                activityList.remove(i);
+                activityList.set(i, -1);
             }
+        }
+
+        int limit = 0;
+        for(int i = 0; i < activityList.size(); i++){
+            if(activityList.get(i) == -1){
+                limit++;
+            }
+        }
+        if(limit == 7){
+            Intent scorepage = new Intent(this, ScoringPage.class);
+            startActivity(scorepage);
         }
 
         Random random = new Random();

@@ -18,18 +18,29 @@
         app:srcCompat="@drawable/triviamiaguccimane" />
 
     <Button
+        android:id="@+id/button4"
+        android:layout_width="256dp"
+        android:layout_height="137dp"
+        android:alpha="0"
+        android:onClick="nonAnswer"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.921" />
+
+    <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="600dp"
+        android:layout_width="257dp"
+        android:layout_height="30dp"
+        android:alpha="0"
+        android:onClick="answer"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="1.0"
-        android:onClick= "answer"/>
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.883" />
 </androidx.constraintlayout.widget.ConstraintLayout>
