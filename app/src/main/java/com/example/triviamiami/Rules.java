@@ -3,6 +3,7 @@ package com.example.triviamiami;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,66 +25,60 @@ public class Rules extends AppCompatActivity {
             activityList.add(i);
         }
 
+        System.out.println("activityList size = " + activityList.size());
+        Intent intent = new Intent();
+        intent.putExtra("activityArray", activityList);
+
         Random random = new Random();
         int firstQuestion = random.nextInt(11);
 
+        int x = 0;
         //Used a switch statement because I wasn't able to pass a string as the second parameter
         //when creating a new Intent object.
-        switch (firstQuestion){
+        switch (x){ //firstQuestion){
             case 0:
-                Intent artbasel = new Intent(this, QArtBasel.class);
-                artbasel.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(artbasel);
+                intent = new Intent(this, QArtBasel.class);
+                startActivity(intent);
                 break;
             case 1:
-                Intent guccimane = new Intent(this, QGucciMane.class);
-                guccimane.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(guccimane);
+                intent = new Intent(this, QGucciMane.class);
+                startActivity(intent);
                 break;
             case 2:
-                Intent hardrock = new Intent(this, QHardRockStadium.class);
-                hardrock.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(hardrock);
+                intent = new Intent(this, QHardRockStadium.class);
+                startActivity(intent);
                 break;
             case 3:
-                Intent hurricaneseason = new Intent(this, QHurricaneSeason.class);
-                hurricaneseason.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(hurricaneseason);
+                intent = new Intent(this, QHurricaneSeason.class);
+                startActivity(intent);
                 break;
             case 4:
-                Intent lilpump = new Intent(this, QLilPump.class);
-                lilpump.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(lilpump);
+                intent = new Intent(this, QLilPump.class);
+                startActivity(intent);
                 break;
             case 5:
-                Intent lilwayne = new Intent(this, QLilWayne.class);
-                lilwayne.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(lilwayne);
+                intent = new Intent(this, QLilWayne.class);
+                startActivity(intent);
                 break;
             case 6:
-                Intent palmetto = new Intent(this, QPalmetto.class);
-                palmetto.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(palmetto);
+                intent = new Intent(this, QPalmetto.class);
+                startActivity(intent);
                 break;
             case 7:
-                Intent pitbull = new Intent(this, QPitbull.class);
-                pitbull.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(pitbull);
+                intent = new Intent(this, QPitbull.class);
+                startActivity(intent);
                 break;
             case 8:
-                Intent rickywilliams = new Intent(this, QRickyWilliams.class);
-                rickywilliams.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(rickywilliams);
+                intent = new Intent(this, QRickyWilliams.class);
+                startActivity(intent);
                 break;
             case 9:
-                Intent scarface = new Intent(this, QScarface.class);
-                scarface.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(scarface);
+                intent = new Intent(this, QScarface.class);
+                startActivity(intent);
                 break;
             case 10:
-                Intent heatles = new Intent(this, QTheHeatles.class);
-                heatles.putIntegerArrayListExtra("ARRAY", activityList);
-                startActivity(heatles);
+                intent = new Intent(this, QTheHeatles.class);
+                startActivity(intent);
                 break;
         }
     }
